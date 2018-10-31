@@ -176,14 +176,13 @@ public class CurrentTasksAdapter extends TaskAdapter {
                                 translationX.addListener(new Animator.AnimatorListener() {
                                     @Override
                                     public void onAnimationStart(Animator animator) {
-                                        itemView.setVisibility(View.GONE);
-                                        getTaskFragment().moveTask(task);
-                                        removeItem(taskViewHolder.getLayoutPosition());
                                     }
 
                                     @Override
                                     public void onAnimationEnd(Animator animator) {
-
+                                        itemView.setVisibility(View.GONE);
+                                        getTaskFragment().moveTask(task);
+                                        removeItem(taskViewHolder.getLayoutPosition());
                                     }
 
                                     @Override
