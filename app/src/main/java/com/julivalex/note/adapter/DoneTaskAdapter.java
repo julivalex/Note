@@ -121,10 +121,10 @@ public class DoneTaskAdapter extends TaskAdapter {
                             if (task.getStatus() != ModelTask.STATUS_DONE) {
 
                                 ObjectAnimator translationX = ObjectAnimator.
-                                        ofFloat(itemView.getWidth(), "translationX", 0f, -itemView.getWidth());
+                                        ofFloat(itemView, "translationX", 0f, -itemView.getWidth());
 
                                 ObjectAnimator translationXBack = ObjectAnimator
-                                        .ofFloat(itemView.getWidth(), "translationX", -itemView.getWidth(), 0f);
+                                        .ofFloat(itemView, "translationX", -itemView.getWidth(), 0f);
 
                                 translationX.addListener(new Animator.AnimatorListener() {
                                     @Override

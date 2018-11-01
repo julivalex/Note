@@ -168,10 +168,10 @@ public class CurrentTasksAdapter extends TaskAdapter {
                                 taskViewHolder.priority.setImageResource(R.drawable.ic_check_circle_white_48dp);
 
                                 ObjectAnimator translationX = ObjectAnimator.
-                                        ofFloat(itemView.getWidth(), "translationX", 0f, itemView.getWidth());
+                                        ofFloat(itemView, "translationX", 0f, itemView.getWidth());
 
                                 ObjectAnimator translationXBack = ObjectAnimator
-                                        .ofFloat(itemView.getWidth(), "translationX", itemView.getWidth(), 0f);
+                                        .ofFloat(itemView, "translationX", itemView.getWidth(), 0f);
 
                                 translationX.addListener(new Animator.AnimatorListener() {
                                     @Override
